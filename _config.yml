@@ -1,7 +1,7 @@
-title:              Clean Blog
-email:              your-email@example.com
-description:        A Blog Theme by Start Bootstrap
-author:             Start Bootstrap
+title:              분홍발자국
+email:              wwft09@naver.com
+description:        폭신폭신 말랑말랑
+author:             Mina
 baseurl:            ""
 url:                "https://2min0r.github.io"
 
@@ -9,8 +9,8 @@ theme: jekyll-theme-clean-blog
 
 # Social Profiles
 twitter_username:   SBootstrap
-github_username:    BlackrockDigital
-facebook_username:  StartBootstrap
+github_username:    2Min0r
+facebook_username:  wwft09
 linkedin_username:
 
 # Add your google-analytics ID here to activate google analytics
