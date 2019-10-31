@@ -10,7 +10,7 @@ form: true
       {% for node in pages_list %}
         {% if node.title != null %}
           {% if node.layout == "category" %}
-            <div class="card">
+            <div class="card category-card-all">
                 <div class="row no-gutters">
                     <div class="col-md-4 card-img category-card">
                             <a class="category-card-title {% if page.url == node.url %} active{% endif %}"

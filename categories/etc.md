@@ -1,4 +1,4 @@
 ---
 layout: category
-title: Game
+title: Etc
 ---
