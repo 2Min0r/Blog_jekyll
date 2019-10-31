@@ -1,0 +1,36 @@
+// Styling for the categories page
+.category-card {
+  max-height: 10rem;
+  height: 100vh;
+  background: linear-gradient(90deg, #764c23, #d89659 );
+  .category-card-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+  }
+}
+
+.categroy-card-body {
+  padding: 1rem;
+}
+
+.category-title {
+  margin: 0.7rem 0 0.7rem 0;
+  font-size: 1.1rem;
+}
+
+.floating-label-form-group-with-focus {
+  label {
+    color: $primary;
+  }
+}
+form .form-group:first-child .floating-label-form-group {
+  border-top: 1px solid $gray-300;
+}
