@@ -20,7 +20,7 @@ form: true
                         <div class="card-body categroy-card-body">
                             {% assign category = node.title %}
                             {% for post in site.categories[category] limit : 3 %}
-                                <p class="category-title">- {{ post.title }}</p>
+                            <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}"><p class="category-title">- {{ post.title }}</p></a>
                             {% endfor %}
                         </div>
                     </div>
