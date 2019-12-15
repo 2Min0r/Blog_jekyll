@@ -10,20 +10,13 @@ form: true
       {% for node in pages_list %}
         {% if node.title != null %}
           {% if node.layout == "category" %}
-            <div class="card category-card-all">
-                <div class="row no-gutters">
-                    <div class="col-md-4 card-img category-card">
-                            <a class="category-card-title {% if page.url == node.url %} active{% endif %}"
-                                href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body categroy-card-body">
-                            {% assign category = node.title %}
-                            {% for post in site.categories[category] limit : 3 %}
-                            <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}"><p class="category-title">- {{ post.title }}</p></a>
-                            {% endfor %}
-                        </div>
-                    </div>
+            <div class="category-set">
+                <p class = "category-title">{{ node.title}}</p>
+                <div class="post-title">
+                  {% assign category = node.title %}
+                  {% for post in site.categories[category] %}
+                  <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">  - {{ post.title }} <span class="post-date">{{ post.date | date: '%Y/%m/%d' }}</span></a>
+                  {% endfor %}
                 </div>
             </div>
           {% endif %}

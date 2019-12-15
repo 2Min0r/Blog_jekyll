@@ -6,6 +6,7 @@ header.masthead {
   background-color: $gray-600;
   background-attachment: scroll;
   position: relative;
+  height: 25rem;
   @include background-cover;
   .overlay {
     position: absolute;
@@ -22,7 +23,7 @@ header.masthead {
     padding: 200px 0 150px;
     color: white;
     @media only screen and (min-width: 768px) {
-      padding: 200px 0;
+      padding: 150px 0;
     }
   }
   .page-heading,
@@ -63,7 +64,7 @@ header.masthead {
     }
     .meta {
       font-size: 18px;
-      font-weight: bold;
+      font-weight: normal;
       @include serif-font;
       a {
         color: $white;
