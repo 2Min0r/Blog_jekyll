@@ -15,7 +15,7 @@ form: true
                 <div class="post-title">
                   {% assign category = node.title %}
                   {% for post in site.categories[category] %}
-                  <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">  - {{ post.title }} <span class="post-date">{{ post.date | date: '%Y/%m/%d' }}</span></a>
+                  <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">  - {{ post.title }} <span class="post-date">{{ post.date | date: '%Y/%m/%d' }}</span></a><br>
                   {% endfor %}
                 </div>
             </div>
