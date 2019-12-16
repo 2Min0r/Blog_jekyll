@@ -8,17 +8,18 @@
       color: $primary;
     }
     > .post-title {
-      font-size: 30px;
+      font-size: 28px;
       margin-top: 30px;
       margin-bottom: 10px;
     }
     > .post-subtitle {
+      font-size: 18px;
       font-weight: 300;
       margin: 0 0 10px;
     }
   }
   > .post-meta {
-    font-size: 18px;
+    font-size: 15px;
     margin-top: 0;
     color: $gray-600;
     > a {
@@ -34,7 +35,7 @@
   @media only screen and (min-width: 768px) {
     > a {
       > .post-title {
-        font-size: 36px;
+        font-size: 28px;
       }
     }
   }
