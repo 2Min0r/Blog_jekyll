@@ -5,7 +5,8 @@ author:             Mina
 baseurl:            ""
 url:                "https://2min0r.github.io"
 
-theme: jekyll-theme-clean-blog
+
+remote_theme: jekyll-theme-clean-blog
 
 # Social Profiles
 twitter_username:
