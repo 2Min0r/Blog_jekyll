@@ -1,0 +1,85 @@
+---
+layout: post
+title: "열네번째 TIL"
+subtitle: "익숙해지는 느낌"
+categories: TIL
+date: 2019-12-28
+background: '/img/posts/01.jpg'
+---
+<blockquote><p>이제 점점 매일 하나라도 코딩을 하는 것에 익숙해지는 것 같다. 놀기 전에도 잠시라도 켜서 했고, 놀고 나서도 했다. 예상보다 오래 걸렸지만, 게임만들고 샘플코드보다 빠르게 짜는 것이 소소한 낙이다❤️</p>
+</blockquote>
+<p>&nbsp;</p>
+<h2>오늘의 TIL</h2>
+<ol>
+<li><p>영어공부</p>
+<ul>
+<li>영어 자막을 보며 1화 part 2를 보았다. 사용되는 문장 구조를 꾸준히 익히고, 나중에는 TIL 전체는 버거워도 맨 윗부분만이라도 영어를 사용하면서 더 익히고 싶다!</li>
+
+</ul>
+</li>
+<li><p>프로그래머 첫걸음 07, 08, 09, 10</p>
+<ul>
+<li><p>모듈</p>
+<pre><code class='language-python' lang='python'>[module1.py]
+import module3			# &quot;Hello!&quot; 출력되지 않음
+</code></pre>
+<pre><code class='language-python' lang='python'>[module3.py]
+# 임포트할 때마다 테스트용 코드를 실행하지 않도록 하는 방법
+if __name__ == &quot;__main__&quot;:
+    print(&quot;Hello!&quot;)
+</code></pre>
+</li>
+<li><p>파일경로</p>
+<ul>
+<li><p>유닉스 계열의 운영체제와 윈도우는 파일 경로에서 사용하는 역슬래시 개수가 다르다. 따라서 항상 내장 os 모듈을 사용해서 파일 경로를 생성해야 한다.</p>
+<pre><code class='language-python' lang='python'>import os
+os.path.join(&quot;Users&quot;,
+            &quot;bob&quot;,
+            &quot;st.txt&quot;)			# Users\bob\st.txt
+</code></pre>
+</li>
+
+</ul>
+</li>
+<li><p>파일 읽기</p>
+<ul>
+<li><p><code>open(&quot;파일이름&quot;, &quot;r&quot;)</code> read는 파일에서 단 한 번만 호출할 수 있으므로, 변수나 컨테이너에 파일 콘텐츠를 저장해야 나중에 활용할 수 있다.</p>
+<pre><code class='language-python' lang='python'>my_list = list()
+with open(&quot;st.txt&quot;, &quot;r&quot;) as f:
+    my_list.append(f.read())
+</code></pre>
+</li>
+
+</ul>
+</li>
+<li><p>Hangman 게임 만들기</p>
+<ul>
+<li>제시된 게임 룰을 따라서 Hangman 게임을 만들었다. </li>
+<li>책을 보지 않고 해보고 싶어서 보지 않고 만들었다. 처음에는 헤맸지만 끝에 생각보다 간단하게 해결되어서 기분이 좋았다. 게다가 더 좋은건 test코드로 시간 측정해본 결과! 내가 만든 코드가 더 빠르다 😁</li>
+
+</ul>
+</li>
+
+
+</ol>
+<ol start='3' >
+<li><p>프로그래머의 자세 - 2</p>
+<ul>
+<li><p>만능 프로그래머가 되자! </p>
+<ul>
+<li>다양한 분야나 기술을 접하자. 진로를 잘못 선택해서 후회하지 말고, 다양한 경험을 하자. 만약 하나의 기술을 많이 사용할 때에는 다른 기술에서 얻었던 교훈은 잊지 말자.</li>
+
+</ul>
+</li>
+<li><p>공부를 멈추지 말자!</p>
+<ul>
+<li>계속 코드를 리팩토링하고 정제하자. 그러면 모르는 부분을 알게 되고 아름다운 코드를 짤 수 있을 것이다. 발전하는 프로그래머가 되자!</li>
+
+</ul>
+</li>
+<li><p>질문하고 찾아보자!</p>
+<ul>
+<li>막히면 혼자 끙끙 앓지 말고, 물어보고 검색하며 다른 사람의 도움을 받으며 성장하자!</li>
+
+
+</ol>
