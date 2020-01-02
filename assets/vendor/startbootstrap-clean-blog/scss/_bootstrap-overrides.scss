@@ -1,4 +1,27 @@
 // Bootstrap overrides for this template
+
+p {
+  margin-bottom: 5px;
+}
+
+pre {
+  display: block;
+  font-size: 87.5%;
+  background-color: #fcf6ef;
+  margin: 2px 0 20px;
+  padding: 18px;
+  border-left: 3px solid $primary;
+}
+
+code {
+  color: #d0881c;
+  background-color: #fcf6ef;
+}
+
+hr {
+  border-color: #e0dedb;
+}
+
 .btn {
   font-size: 14px;
   font-weight: 800;
@@ -12,12 +35,17 @@
 .btn-primary {
   background-color: $primary;
   border-color: $primary;
+  border-radius: 30px;
   &:hover,
   &:focus,
   &:active {
     color: $white;
     background-color: darken($primary, 7.5) !important;
     border-color: darken($primary, 7.5) !important;
+    box-shadow: none;
+  }
+  &:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none;
   }
 }
 

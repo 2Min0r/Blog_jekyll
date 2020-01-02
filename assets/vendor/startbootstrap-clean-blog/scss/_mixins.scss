@@ -1,5 +1,7 @@
 // Mixins
 // Bootstrap Button Variant
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
 @mixin button-variant($color, $background, $border) {
   color: $color;
   border-color: $border;
@@ -61,8 +63,8 @@
   background-size: cover;
 }
 @mixin serif-font() {
-  font-family: 'Iropke Batang', serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 @mixin sans-serif-font() {
-  font-family: 'Iropke Batang', serif;
+  font-family: "Noto Sans KR", sans-serif;
 }

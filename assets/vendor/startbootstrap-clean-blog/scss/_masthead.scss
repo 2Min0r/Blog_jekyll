@@ -14,12 +14,13 @@ header.masthead {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: $gray-900;
+    background-color: #55555575;
     opacity: 0.5;
   }
   .page-heading,
   .post-heading,
   .site-heading {
+    text-shadow: 1px 1px 1px #0f01015e;
     padding: 200px 0 150px;
     color: white;
     @media only screen and (min-width: 768px) {
@@ -34,16 +35,15 @@ header.masthead {
       margin-top: 0;
     }
     .subheading {
-      font-size: 24px;
-      font-weight: 300;
+      font-size: 1.5rem;
+      font-weight: 500;
       line-height: 1.1;
-      display: block;
       margin: 10px 0 0;
       @include sans-serif-font;
     }
     @media only screen and (min-width: 768px) {
       h1 {
-        font-size: 80px;
+        font-size: 4.5rem;
       }
     }
   }
@@ -54,7 +54,6 @@ header.masthead {
     .meta,
     .subheading {
       line-height: 1.1;
-      display: block;
     }
     .subheading {
       font-size: 24px;
