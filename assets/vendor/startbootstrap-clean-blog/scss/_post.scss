@@ -2,13 +2,14 @@
 .post-preview {
   > a {
     color: $gray-900;
+    display: block;
     &:focus,
     &:hover {
       text-decoration: none;
-      color: $primary;
+      transform: translate(0px, -10px);
     }
     > .post-title {
-      font-size: 28px;
+      font-size: 25px;
       margin-top: 30px;
       margin-bottom: 10px;
     }
@@ -41,13 +42,8 @@
   }
 }
 
-.post-main {
-  .post-content {
-    li {
-      margin: 10px 0px;
-    }
-    blockquote {
-      font-size: 1.1rem;
-    }
+.post-content {
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1.875rem;
   }
 }

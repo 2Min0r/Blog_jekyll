@@ -28,6 +28,7 @@
   @media only screen and (min-width: 992px) {
     border-bottom: 1px solid transparent;
     background: transparent;
+    text-shadow: 1px 1px 1px #0f01015e;
     .navbar-brand {
       padding: 10px 20px;
       color: $white;
@@ -67,8 +68,9 @@
       -webkit-transition: -webkit-transform 0.2s;
       -moz-transition: -moz-transform 0.2s;
       transition: transform 0.2s;
-      border-bottom: 1px solid darken($white, .05);
-      background-color: fade-out($white, .1);
+      border-bottom: 1px solid darken($white, .6);
+      background-color: fade-out($white, .5);
+      text-shadow: none;
       .navbar-brand {
         color: $gray-900;
         &:focus,
