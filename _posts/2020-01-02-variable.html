@@ -1,0 +1,54 @@
+---
+layout: post
+title: "Ubuntu 환경변수 저장하기"
+subtitle: "Windows10에서 Ubuntu 환경변수 생성 및 저장방법"
+categories: Python
+date: 2020-01-02
+background: '/img/bg-index.jpg'
+---
+<h2>Ubuntu 환경변수 만들기</h2>
+<blockquote><p>책을 따라하던 중 처음으로 ubuntu 환경변수를 만들면서 고생을 했다.. 일단 내가 찾은 방법을 정리하려고 한다. (참고로 저는 windows10에서 ubuntu를 설치하였습니다.)</p>
+</blockquote>
+<p>&nbsp;</p>
+<h3>환경변수 만드는 방법</h3>
+<p>환경변수는 export를 사용해서 만들 수 있으며, 이때 명령어 사이만 띄어쓰기를 해야 한다. <code>export x = 100</code>은 작동하지 않는다.</p>
+<pre><code class='language-shell' lang='shell'>export x=100
+echo $x
+</code></pre>
+<p>이렇게 만들어진 환경변수는 배시를 종료하게 되면 사라지게 된다.</p>
+<p>&nbsp;</p>
+<h3>환경변수 저장하여 사용하는 방법</h3>
+<p>만약, 환경변수를 저장하여 사용하기 위해서는 home 디렉터리에서 히든 파일 .profile을 만들어서 환경변수를 유지할 수 있다. 방법을 차근차근 설명하면 이러하다.</p>
+<pre><code class='language-shell' lang='shell'># 1. 먼저 home 디렉터리로 이동한다.
+cd /home
+
+# 2. 파일명앞에 .이 붙은 파일은 히든파일로 보이지 않기 때문에 -a 플래그를 설정해서 확인할 수 있다.
+ls -a
+
+# 3. .profile을 생성한다. 이때 앞에 붙는 sudo는 루트관리자의 권한으로 실행하는 것이다.
+sudo touch .profile
+ls -a
+
+# 4. 파일이 만들어졌다면, 파일을 열어야 한다. (sudo를 붙이지 않으면 저장이 안된다.)
+sudo vim .profile
+
+# 5. vim editor가 열렸다면, &#39;i&#39;를 눌러 insert 모드로 전환한다. 그리고 export [변수명]=[값]의 형식으로 변수를 입력한다.
+export x=10
+export desktop=/mnt/c/Users/LG/Desktop/
+
+# 6. &#39;ESC&#39;키를 누르고 :wq를 눌러 저장 후 vim editor를 나온다. /home 디렉토리에서 아래와 같이 입력한다.
+source .profile
+echo $x
+echo $desktop
+
+# desktop 사용방법
+cd $desktop			# 바탕화면으로 바로 이동
+</code></pre>
+<p>&nbsp;</p>
+<p>사진 첨부를 하는 대신에 최대한 자세하게 설명했다. 배시를 닫고 다시 킨 이후에도 같은 변수를 실행하고 싶다면,</p>
+<pre><code class='language-shell' lang='shell'>cd /home
+source .profile
+</code></pre>
+<p>위와 같이 입력한 후에 사용할 수 있다.</p>
+<p>&nbsp;</p>
+<p>혹시 잘못된 부분이나 궁금한 부분이 있으시면 아직 댓글창을 만들지 못해 블로그 하단의 SNS나 이메일로 보내주시기 바랍니다ㅎㅎ..😓</p>
