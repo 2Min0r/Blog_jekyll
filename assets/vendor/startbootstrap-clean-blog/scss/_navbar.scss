@@ -3,7 +3,6 @@
   position: absolute;
   border-bottom: 1px solid $gray-200;
   background-color: white;
-  text-shadow: 1px 1px 1px #0f01015e;
   @include sans-serif-font;
   .navbar-brand {
     font-weight: 800;
@@ -29,6 +28,7 @@
   @media only screen and (min-width: 992px) {
     border-bottom: 1px solid transparent;
     background: transparent;
+    text-shadow: 1px 1px 1px #0f01015e;
     .navbar-brand {
       padding: 10px 20px;
       color: $white;
