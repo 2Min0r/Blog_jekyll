@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://2min0r.github.io/sitemap.xml
