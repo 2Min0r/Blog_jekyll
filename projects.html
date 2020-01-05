@@ -1,8 +1,20 @@
 ---
 layout: page
 title: Projects
-description: https://github.com/2Min0r
+description: https://github.com/2min0r
 background: '/img/bg-index.jpg'
 form: true
 ---
-<p>미완성</p>
+<div class = "switch">
+    <label>
+        Show forked projects
+        <span class="toggleWrapper">
+            <input type="checkbox" class="dn" id="dn"/>
+            <label for="dn" class="toggle">
+                <span class="toggle__handler"></span>
+            </label>
+        </span> 
+    </label>
+    
+</div>
+<p>{{ page.description }}</p>
