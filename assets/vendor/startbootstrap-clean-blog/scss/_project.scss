@@ -53,5 +53,73 @@
       }
     }
   }
+.card {
+    cursor: pointer;
+    height: 100%;
+    transition: transform .5s;
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: opacity 2s cubic-bezier(.165, .84, .44, 1);
+      box-shadow: 0 8px 10px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
+      content: '';
+      opacity: 0;
+      z-index: -1;
+    }
+    &:hover,
+    &:focus {
+      transform: scale3d(1.006, 1.006, 1);
   
-  
+      &::after {
+        opacity: 1;
+      }
+    }
+    .card-img-top {
+      position: relative;
+      background:
+      radial-gradient(#fff8ee 15%, transparent 15%) 0 0,
+      radial-gradient(#f5e6d1 15%, transparent 15%) 16px 16px,
+      radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+      radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 16px 17px;
+      background-size: 32px 32px;
+      background-color: $primary;
+      height: 10em;
+    }
+    .card-top {
+      .card-title {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        color: $white;
+        text-shadow: 0px 0px 2px #000000d9, -1px 1px 1px #000000d9;
+        font-weight: bold;
+        font-size: 1.2rem;
+        text-align: center;
+        transform: translate(-50%, -50%);
+      }
+      .gitstar {
+        position: absolute;
+        padding: 5px 10px;
+        font-size: 0.9rem;
+        font-weight: 900;
+        color: white;
+        text-shadow: 0px 0px 2px #000000d9;
+      }
+      .update-at {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 5px;
+        font-size: 0.7rem;
+        color: white;
+        text-shadow: 0px 0px 2px #000000d9;
+      }
+    }
+    .card-body {
+        font-size: 0.8rem;
+        color: $gray-600;
+    }
+}

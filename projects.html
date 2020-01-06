@@ -5,6 +5,7 @@ description: https://github.com/2min0r
 background: '/img/bg-index.jpg'
 form: true
 ---
+
 <div class = "switch">
     <label>
         Show forked projects
@@ -15,6 +16,23 @@ form: true
             </label>
         </span> 
     </label>
-    
 </div>
-<p>{{ page.description }}</p>
+
+{% assign sorted_repos = site.github.public_repositories | sort: 'stargazers_count' | reverse  %}
+
+<div class="row row-cols-1 row-cols-md-3">
+    {% for repo in sorted_repos %}
+    <div class="col mb-4">
+      <div class="card">
+        <div class="card-top card-img-top">
+          <span class="gitstar">★{{repo.stargazers_count}}</span>
+          <a class="card-title" href="{{repo.html_url}}" target="_blank">{{repo.name}}</a>
+          <span class="update-at">Update: {{repo.updated_at | date: '%Y-%m-%d'}}</span>
+        </div>
+        <div class="card-body">
+          <p class="card-text">{{repo.description}}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+</div>
