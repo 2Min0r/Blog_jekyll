@@ -1,0 +1,47 @@
+---
+layout: post
+title: "jekyll github metadata 경고해결"
+subtitle: "Windows10에서 경고 해결하기"
+categories: Etc
+date: 2020-01-08
+background: '/img/bg-index.jpg'
+---
+<h2>jekyll github metadata 경고 해결</h2>
+<p>Windows10 사용자입니다. 만약 Start Command Prompt with Ruby를 통해 <code>bundle exec jekyll serve</code>시 아래와 같은 경고메시지가 보일 때 해결하는 방법입니다. <a href='https://mycyberuniverse.com/fixing-jekyll-github-metadata-warning.html' target='_blank'>참고사이트</a>를 보고 windows의 경우 해결방법을 기록합니다.</p>
+<pre><code>GitHub Metadata: No GitHub API authentication could be found. Some fields may be missing or have incorrect data.
+</code></pre>
+<p>&nbsp;</p>
+<p>아래의 방법은 <a href='https://github.com/jekyll/github-metadata' target='_blank'>github-metadata</a>을 통해 gem과 plugin을 설치하신 후 진행하시기 바랍니다.</p>
+<p>&nbsp;</p>
+<h3>1. Github personal access tokens</h3>
+<ol>
+<li><p>본인의 깃헙페이지의 오른쪽 위 프로필사진을 클릭합니다.</p>
+</li>
+<li><p>Settings를 클릭합니다.</p>
+</li>
+<li><p>왼쪽 메뉴바 하단의 Develope settings를 클릭합니다.</p>
+</li>
+<li><p>Personal access tokens를 클릭합니다.</p>
+</li>
+<li><p>Generate new token을 클릭합니다.</p>
+</li>
+<li><p>Note에 해당 토큰의 이름을 입력합니다. ex) token-for-terminal-app</p>
+</li>
+<li><p>repo의 public_repo에 체크합니다.</p>
+</li>
+<li><p>Generate token을 클릭합니다.</p>
+<p>⭐️토큰이 생성되었으면, 해당 토큰을 복사합니다. 이 토큰은 페이지를 나가게 되면 더이상 볼 수 없습니다. 안전하게 토큰을 보관하며, 다른 사람에게 공유되지 않도록 해야 합니다.⭐️</p>
+</li>
+
+</ol>
+<p>&nbsp;</p>
+<h3>2. 환경변수 생성</h3>
+<ol>
+<li>시작 &gt; 검색 &gt; <code>cmd</code>입력을 통해 명령 프롬프트 창을 켭니다.</li>
+<li><code>setx JEKYLL_GITHUB_TOKEN &quot;[복사한토큰]&quot; -m</code>을 입력합니다. 이 방법은 <a href='https://booolean.tistory.com/403' target='_blank'>참고사이트</a>와 같은 방법으로도 똑같이 할 수 있습니다.</li>
+<li>명령 프롬프트 창을 닫은 뒤 다시 켜서 <code>echo %JEKYLL_GITHUB_TOKEN</code>을 입력하여 확인합니다.</li>
+<li>Start Command Prompt with Ruby 창을 다시 켠 후 위와 같은 방법으로 확인할 수 있으며, <code>bundle exec jekyll serve</code>를 입력하면 해당 경고가 사라집니다. (<a href='https://github.com/jekyll/github-metadata/blob/master/docs/authentication.md' target='_blank'>추가참고사이트</a>)</li>
+
+</ol>
+<p>&nbsp;</p>
+<p>혹시 잘못된 부분이나 궁금한 부분이 있으시면 아직 댓글창을 만들지 못해 블로그 하단의 SNS나 이메일로 보내주시기 바랍니다ㅎㅎ..😓</p>

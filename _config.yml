@@ -1,10 +1,10 @@
 title:              Mina's Devlog
 email:              wwft09@naver.com
-description:      끊임없이 배우고 성장하는 사람이 되자
+description:        끊임없이 배우고 성장하는 사람이 되자
 author:             Mina
 baseurl:            ""
 url:                "https://2min0r.github.io"
-repository: 2Min0r/2Min0r.github.io
+repository:         2Min0r/2Min0r.github.io
 
 theme: jekyll-theme-clean-blog
 
@@ -25,3 +25,4 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
+  - jekyll-github-metadata
