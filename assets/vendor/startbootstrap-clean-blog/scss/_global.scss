@@ -64,6 +64,10 @@ blockquote {
   border-bottom-left-radius: 5px;
 }
 
+.hidden {
+  display: none;
+}
+
 ::-moz-selection {
   color: $white;
   background: $primary;

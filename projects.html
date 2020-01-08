@@ -5,24 +5,22 @@ description: https://github.com/2min0r
 background: '/img/bg-index.jpg'
 form: true
 ---
-
-<div class = "switch">
-    <label>
-        Show forked projects
-        <span class="toggleWrapper">
-            <input type="checkbox" class="dn" id="dn"/>
-            <label for="dn" class="toggle">
-                <span class="toggle__handler"></span>
-            </label>
-        </span> 
-    </label>
-</div>
-
 {% assign sorted_repos = site.github.public_repositories | sort: 'stargazers_count' | reverse  %}
 
-<div class="row row-cols-1 row-cols-md-3">
+<div class = "switch">
+  Show forked projects
+  <span class="toggleWrapper">
+      <input type="checkbox" class="dn fork-switch" id="dn" onchange="toggleForked()"/>
+      <label for="dn" class="toggle">
+          <span class="toggle__handler"></span>
+      </label>
+  </span> 
+</div>
+
+
+<div class="row row-cols-1 row-cols-md-3 card-group">
     {% for repo in sorted_repos %}
-    <div class="col mb-4">
+    <div class="col mb-4" {% if repo.fork %}id="forked"{% endif %}>
       <div class="card">
         <div class="card-top card-img-top">
           <span class="gitstar">★{{repo.stargazers_count}}</span>

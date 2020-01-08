@@ -4,6 +4,7 @@
 
 <script src="{{"/assets/scripts.js" | relative_url }}"></script>
 
+<!-- back to top button -->
 <script>
 
   jQuery(window).scroll(function(){
@@ -41,3 +42,16 @@
       },800)
   });
 </script>
+
+<!-- forked project -->
+{% if page.url contains 'projects' %}
+    <script>
+        function toggleForked(){
+        if ($('.fork-switch').prop('checked')) {
+            $('div[id=forked]').removeClass('hidden');
+        } else {
+            $('div[id=forked]').addClass('hidden');
+        }
+        }
+    </script>
+{% endif %}
