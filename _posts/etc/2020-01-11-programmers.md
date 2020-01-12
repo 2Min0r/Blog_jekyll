@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "프로그래머 Tip"
-subtitle: "<프로그래머 첫걸음> 정리"
+subtitle: "[프로그래머 첫걸음] 정리"
 categories: Etc
 date: 2020-01-11
 background: '/img/bg-index.jpg'
@@ -9,13 +9,13 @@ background: '/img/bg-index.jpg'
 
 ## 프로그래머 Tip
 
-<비전공자가 궁금해하는 프로그래머 첫걸음>을 보고 정리했습니다.
+[비전공자가 궁금해하는 프로그래머 첫걸음]을 보고 정리했습니다.
 
 <br>
 
 ### 실무 코드를 작성하는 일반적인 원칙
 
-Andy Hunt와 Dave Thomas의 <실용주의 프로그래머>(인사이트, 2005)는 코드의 품질을 향상시키기에 좋은 책
+Andy Hunt와 Dave Thomas의 [실용주의 프로그래머](인사이트, 2005)는 코드의 품질을 향상시키기에 좋은 책
 
 1. **코드 작성은 최후의 수단**
 
@@ -82,12 +82,12 @@ Andy Hunt와 Dave Thomas의 <실용주의 프로그래머>(인사이트, 2005)�
 
 1. **책**
 
-   - <실용주의 프로그래머>(인사이트, 2005) - Andy Hunt, Dave Thomas
-   - <GoF의 디자인패턴>(피어슨 에듀케이션 코리아, 2002) - erich Gamma, Richard Helm, Ralph Johnson, John Vlissides
-   - < Code Complete>(정보문화사) - Steve McConnell
-   - <컴파일러: 원리, 기법, 도구>(피어슨 에듀케이션 코리아, 2009) - Ravi Sethi, Monica S. Lam, Alfred Ah, Jeffrey Ultman
-   - < Introduction to Algorithms>(한빛미디어, 2014) - MIT
-   - < Problem Solving with Data Structures and Algorithms> - Bradley N. Miller, David L. Ranum
+   - [실용주의 프로그래머](인사이트, 2005) - Andy Hunt, Dave Thomas
+   - [GoF의 디자인패턴](피어슨 에듀케이션 코리아, 2002) - erich Gamma, Richard Helm, Ralph Johnson, John Vlissides
+   - [ Code Complete](정보문화사) - Steve McConnell
+   - [컴파일러: 원리, 기법, 도구](피어슨 에듀케이션 코리아, 2009) - Ravi Sethi, Monica S. Lam, Alfred Ah, Jeffrey Ultman
+   - [ Introduction to Algorithms](한빛미디어, 2014) - MIT
+   - [ Problem Solving with Data Structures and Algorithms] - Bradley N. Miller, David L. Ranum
 
 2. **온라인 강의**
 
@@ -99,9 +99,9 @@ Andy Hunt와 Dave Thomas의 <실용주의 프로그래머>(인사이트, 2005)�
 
 4. **글**
 
-   [<ABC: Always Be Coding> - David Byttow][https://medium.com/always-be-coding/abc-always-be-coding-d5f8051afce2]
+   [[ABC: Always Be Coding] - David Byttow][https://medium.com/always-be-coding/abc-always-be-coding-d5f8051afce2]
 
-
+<br>
 
 ### 프로그래머 명언
 
@@ -124,7 +124,6 @@ Andy Hunt와 Dave Thomas의 <실용주의 프로그래머>(인사이트, 2005)�
 11. 훌륭한 프로그래머와 미숙한 프로그래머의 차이는 문제가 발생했을 때 디버그하기 쉽도록 로그를 남기느냐 아니냐의 차이다.
 12. 테스트하지 않은 코드는 깨진 코드이다.
 13. 보안은 마음가짐이다.
-
 
 
 [https://docs.python.org/3/library/unittest.html]: https://docs.python.org/3/library/unittest.html
