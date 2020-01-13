@@ -11,7 +11,7 @@ form: true
         {% if node.title != null %}
           {% if node.layout == "category" %}
             <div class="category-set">
-                <p class = "category-title">{{ node.title}}</p>
+                <p class = "category-title">{{ node.title }}</p>
                 <div class="post-title">
                   {% assign category = node.title %}
                   {% for post in site.categories[category] %}

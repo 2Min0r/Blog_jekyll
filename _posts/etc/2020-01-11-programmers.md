@@ -2,7 +2,7 @@
 layout: post
 title: "프로그래머 Tip"
 subtitle: "[프로그래머 첫걸음] 정리"
-categories: Etc
+category: Etc
 date: 2020-01-11
 background: '/img/bg-index.jpg'
 ---
