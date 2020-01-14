@@ -6,7 +6,7 @@ baseurl:            ""
 url:                "https://2min0r.github.io"
 repository:         2Min0r/2Min0r.github.io
 
-theme: jekyll-theme-clean-blog
+theme:       jekyll-theme-clean-blog
 
 # Social Profiles
 twitter_username:
