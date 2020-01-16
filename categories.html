@@ -11,12 +11,13 @@ form: true
         {% if node.title != null %}
           {% if node.layout == "category" %}
             <div class="category-set">
-                <p class = "category-title">{{ node.title }}</p>
-                <div class="post-title">
+                <a href="{{ node.url | prepend: site.baseurl | replace: '//', '/' }}" class="category-title"> {{ node.title }} </a>
+                <button class="show_category" id="toggle_category" onclick="hiddenView(this)">숨기기</button>
+                <div class="post-title" id="target">
                   {% assign category = node.title %}
                   {% for post in site.categories[category] %}
                   <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">  - {{ post.title }} <span class="post-date">{{ post.date | date: '%Y/%m/%d' }}</span></a><br>
-                  {% endfor %}
+                  {% endfor %}  
                 </div>
             </div>
           {% endif %}

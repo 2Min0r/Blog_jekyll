@@ -55,3 +55,16 @@
         }
     </script>
 {% endif %}
+
+{% if page.url contains 'categories' %}
+<script>
+    function hiddenView(obj){
+        var target = $(obj).next().eq(0);
+        if('block' == $(target).css('display')){
+            $(target).css('display', 'none');
+        }else{
+            $(target).css('display', 'block');
+        }
+    }
+</script>
+{% endif %}
