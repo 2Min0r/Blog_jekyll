@@ -30,7 +30,6 @@ layout: default
       {{ content }}
       <!-- Home Post List -->
       {% for post in site.posts %}
-        {% if post.category != "TIL" %}
         <article class="post-preview">
           <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
             <h2 class="post-title">{{ post.title }}</h2>
@@ -43,7 +42,6 @@ layout: default
           <p class="post-meta">{{ post.date | date: '%Y년 %m월 %d일' }}</p>
         </article>
         <hr>
-        {% endif %}
       {% endfor %}
 
       <!-- Pager -->
