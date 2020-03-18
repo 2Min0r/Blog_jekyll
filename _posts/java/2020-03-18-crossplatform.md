@@ -3,7 +3,7 @@ layout: post
 title: "크로스 플랫폼(Cross-platform)"
 subtitle: "자바의 크로스 플랫폼"
 category: Java
-date: 2020-03-16
+date: 2020-03-18
 background: '/img/bg-index.jpg'
 ---
 

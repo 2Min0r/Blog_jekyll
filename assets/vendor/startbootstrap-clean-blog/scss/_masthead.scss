@@ -21,7 +21,7 @@ header.masthead {
   .post-heading,
   .site-heading {
     text-shadow: 1px 1px 1px #0f01015e;
-    padding: 200px 0 150px;
+    padding: 16vmax 0 150px;
     color: white;
     @media only screen and (min-width: 768px) {
       padding: 150px 0;
@@ -49,16 +49,16 @@ header.masthead {
   }
   .post-heading {
     h1 {
-      font-size: 3rem;
+      font-size: 2.6rem;
     }
     .meta,
     .subheading {
       line-height: 1.1;
     }
     .subheading {
-      font-size: 2rem;
+      font-size: 1.7rem;
       font-weight: 600;
-      margin: 10px 0 30px;
+      margin: 20px 0 25px;
       @include sans-serif-font;
     }
     .meta {
