@@ -2,7 +2,7 @@
 layout: post
 title: "리치 클라이언트(Rich Client)"
 subtitle: "리치 클라이언트 애플리케이션(Rich Client Application)"
-category: Etc
+category: Java
 date: 2020-03-16
 background: '/img/bg-index.jpg'
 ---
